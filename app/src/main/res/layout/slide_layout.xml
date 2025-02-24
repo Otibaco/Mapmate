@@ -22,7 +22,6 @@
         android:textSize="30sp"
         android:textStyle="italic"
         android:fontFamily="@font/poppins_bolditalic"
-        android:text="Feature Header"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,8 +38,6 @@
         android:textAlignment="center"
         android:textSize="18sp"
         android:fontFamily="@font/manrope_extralight"
-
-        android:text="Feature Description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
