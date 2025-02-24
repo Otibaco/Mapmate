@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mapmate</string>
+    <string name="feature1_header">Easy Access</string>
+    <string name="feature1_description">Effortlessly find and navigate through places with intuitive search and map features.</string>
+    <string name="feature2_header">Secure Backup</string>
+    <string name="feature2_description">Your locations are safely stored in the cloud, ensuring your data is always protected.</string>
+    <string name="feature3_header">Real-time Alerts</string>
+    <string name="feature3_description">Get notifications when near a saved place, so you never miss out on important locations.</string>
+    <string name="feature4_header">Cloud Messaging</string>
+    <string name="feature4_description">Communicate with other users to share experiences and tips about different places.</string>
+    <string name="feature5_header">Share Posts</string>
+    <string name="feature5_description">Share your favorite places and experiences with the community, and discover new destinations from others posts.</string>
+</resources>

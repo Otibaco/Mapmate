@@ -1,0 +1,14 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:windowBackground">@color/darkBackground</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorOnBackground">@color/textColorWhite</item>
+        <item name="android:textColorPrimary">@color/textColorWhite</item>
+
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#00008B</color> <!-- Deep Blue -->
+    <color name="secondaryColor">#2E8B57</color> <!-- Sea Green -->
+    <color name="accentColor">#F08080</color> <!-- Light Coral -->
+    <color name="textColorBlack">#000000</color> <!-- Black Text -->
+    <color name="textColorWhite">#FFFFFF</color> <!-- White Text -->
+    <color name="lightBackground">#FFFFFF</color> <!-- White Background for Light Mode -->
+    <color name="darkBackground">#000000</color> <!-- Black Background for Dark Mode -->
+</resources>
+
+
+
