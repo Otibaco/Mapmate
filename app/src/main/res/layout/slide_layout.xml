@@ -37,7 +37,7 @@
         android:layout_marginEnd="15dp"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:fontFamily="@font/manrope_extralight"
+        android:fontFamily="@font/opensans_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

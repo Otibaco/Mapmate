@@ -1,15 +1,12 @@
 package com.example.mapmate;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
-import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
+
 import me.relex.circleindicator.CircleIndicator3;
 import java.util.Arrays;
 import java.util.List;
@@ -50,7 +47,7 @@ public class SlideActivity extends AppCompatActivity {
 
         btnSkip.setOnClickListener(v -> {
             // Go to main app screen
-            startActivity(new Intent(SlideActivity.this, MainActivity.class));
+            startActivity(new Intent(SlideActivity.this, SplashActivity.class));
             finish();
         });
 
@@ -58,7 +55,7 @@ public class SlideActivity extends AppCompatActivity {
             if (viewPager.getCurrentItem() < slideItems.size() - 1) {
                 viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
             } else {
-                startActivity(new Intent(SlideActivity.this, MainActivity.class));
+                startActivity(new Intent(SlideActivity.this, SplashActivity.class));
                 finish();
             }
         });
