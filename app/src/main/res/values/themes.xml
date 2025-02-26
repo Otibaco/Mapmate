@@ -8,7 +8,8 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="colorOnBackground">@color/textColorBlack</item>
-        <item name="android:textColorPrimary">@color/textColorBlack</item>
+        <item name="android:textColorPrimary">?attr/colorOnBackground</item>
+<!--        <item name="android:windowFullscreen">true</item>-->
 
     </style>
 </resources>

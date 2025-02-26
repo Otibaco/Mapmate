@@ -7,6 +7,7 @@
     <color name="textColorWhite">#FFFFFF</color> <!-- White Text -->
     <color name="lightBackground">#FFFFFF</color> <!-- White Background for Light Mode -->
     <color name="darkBackground">#000000</color> <!-- Black Background for Dark Mode -->
+    <color name="Skyblue">#1E88E5</color> <!-- Skyblue -->
 </resources>
 
 
