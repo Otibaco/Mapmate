@@ -10,4 +10,11 @@
     <string name="feature4_description">Communicate with other users to share experiences and tips about different places.</string>
     <string name="feature5_header">Share Posts</string>
     <string name="feature5_description">Share your favorite places and experiences with the community, and discover new destinations from others posts.</string>
+    <string name="user_agreement_text">
+    By continuing, you agree to our User Agreement and acknowledge that you understand the Privacy Policy.
+</string>
+
+
+
+
 </resources>

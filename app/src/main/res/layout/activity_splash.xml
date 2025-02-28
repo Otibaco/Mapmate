@@ -17,6 +17,4 @@
         android:textColor="?attr/colorOnBackground"
         android:textSize="36sp"
         android:textStyle="bold" />
-
-
 </LinearLayout>

@@ -1,13 +1,16 @@
 package com.example.mapmate;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
 import me.relex.circleindicator.CircleIndicator3;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,6 +22,8 @@ public class SlideActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
 //        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 //            Window window = getWindow();
 //            window.getDecorView().setSystemUiVisibility(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
@@ -30,6 +35,9 @@ public class SlideActivity extends AppCompatActivity {
         btnSkip = findViewById(R.id.btn_skip);
         btnNext = findViewById(R.id.btn_next);
         CircleIndicator3 circleIndicator = findViewById(R.id.dots_indicator);
+
+
+
 
         // List of slides (handled by the adapter)
         List<SlideItem> slideItems = Arrays.asList(
@@ -47,7 +55,7 @@ public class SlideActivity extends AppCompatActivity {
 
         btnSkip.setOnClickListener(v -> {
             // Go to main app screen
-            startActivity(new Intent(SlideActivity.this, SplashActivity.class));
+            startActivity(new Intent(SlideActivity.this, MainActivity.class));
             finish();
         });
 
@@ -55,10 +63,17 @@ public class SlideActivity extends AppCompatActivity {
             if (viewPager.getCurrentItem() < slideItems.size() - 1) {
                 viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
             } else {
-                startActivity(new Intent(SlideActivity.this, SplashActivity.class));
+                // Save flag that SlideActivity has been seen
+                SharedPreferences prefs = getSharedPreferences("AppPrefs", MODE_PRIVATE);
+                SharedPreferences.Editor editor = prefs.edit();
+                editor.putBoolean("isFirstTime", false);
+                editor.apply();
+
+                startActivity(new Intent(SlideActivity.this, MainActivity.class));
                 finish();
             }
         });
+
 
         viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
