@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#00008B</color> <!-- Deep Blue -->
+    <color name="primaryColor">#1E88E5</color> <!-- Deep Blue -->
     <color name="secondaryColor">#2E8B57</color> <!-- Sea Green -->
-    <color name="accentColor">#F08080</color> <!-- Light Coral -->
+    <color name="accentColor">#1E88E5</color> <!-- Light Coral -->
     <color name="textColorBlack">#000000</color> <!-- Black Text -->
     <color name="textColorWhite">#FFFFFF</color> <!-- White Text -->
     <color name="lightBackground">#FFFFFF</color> <!-- White Background for Light Mode -->
-    <color name="gray">#B6B4B4</color> <!-- White Background for Light Mode -->
-    <color name="darkBackground">#000000</color> <!-- Black Background for Dark Mode -->
-    <color name="Skyblue">#1E88E5</color> <!-- Skyblue -->
+    <color name="gray">#4DFFFFFF</color> <!-- White Background for Light Mode -->
+    <color name="darkBackground">#141313</color> <!-- Black Background for Dark Mode -->
+    <color name="Deepblue">#00008B</color>
+    <color name="Lightgray">#7E7E90</color>
+
 </resources>
 
 

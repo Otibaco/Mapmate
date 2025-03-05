@@ -9,6 +9,8 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.mapmate.auth.RegLogActivity;
+
 import me.relex.circleindicator.CircleIndicator3;
 
 import java.util.Arrays;
@@ -35,7 +37,6 @@ public class SlideActivity extends AppCompatActivity {
         btnSkip = findViewById(R.id.btn_skip);
         btnNext = findViewById(R.id.btn_next);
         CircleIndicator3 circleIndicator = findViewById(R.id.dots_indicator);
-
 
 
 
@@ -69,7 +70,7 @@ public class SlideActivity extends AppCompatActivity {
                 editor.putBoolean("isFirstTime", false);
                 editor.apply();
 
-                startActivity(new Intent(SlideActivity.this, MainActivity.class));
+                startActivity(new Intent(SlideActivity.this, RegLogActivity.class));
                 finish();
             }
         });

@@ -3,12 +3,9 @@ package com.example.mapmate;
 import android.content.IntentFilter;
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.example.mapmate.broadcastR.NetworkReceiver;
 
 public class MainActivity extends AppCompatActivity {
     private NetworkReceiver networkReceiver;

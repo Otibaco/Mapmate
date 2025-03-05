@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
-    <corners android:radius="10dp" />
-    <solid android:color="@color/Skyblue" />
-    <stroke android:width="1dp" android:color="#D1D1D1" />
-    <padding android:left="12dp" android:right="12dp" />
-</shape>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Focused state: Blue border -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/> <!-- Transparent background -->
+            <stroke android:width="1dp" android:color="@color/primaryColor"/> <!-- Blue border -->
+            <corners android:radius="10dp"/> <!-- Rounded corners -->
+            <padding android:left="12dp" android:right="12dp"/> <!-- Padding inside the input field -->
+        </shape>
+    </item>
+
+    <!-- Default state: White transparent border -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/> <!-- Transparent background -->
+            <stroke android:width="1dp" android:color="@color/Lightgray"/> <!-- White border with transparency -->
+            <corners android:radius="10dp"/> <!-- Rounded corners -->
+            <padding android:left="12dp" android:right="12dp"/> <!-- Padding inside the input field -->
+        </shape>
+    </item>
+
+</selector>

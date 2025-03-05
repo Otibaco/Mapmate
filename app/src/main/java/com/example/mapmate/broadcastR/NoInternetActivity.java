@@ -1,16 +1,15 @@
-package com.example.mapmate;
+package com.example.mapmate.broadcastR;
 
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.view.View;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
+
+import com.example.mapmate.MainActivity;
+import com.example.mapmate.R;
 
 public class NoInternetActivity extends AppCompatActivity {
 

@@ -9,15 +9,16 @@ import android.view.animation.Animation;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.example.mapmate.auth.RegLogActivity;
 
 public class SplashActivity extends AppCompatActivity {
-
-    private static final int SPLASH_TIME_OUT = 5000; // 6 seconds delay
+    private static final int SPLASH_TIME_OUT = 2000; // 2 seconds delay
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 

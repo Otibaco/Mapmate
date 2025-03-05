@@ -13,11 +13,13 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.example.mapmate.R;
 
 public class RegLogActivity extends AppCompatActivity {
+
     private ViewPager2 viewPager;
     private Button loginButton, signUpButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg_log);
 
