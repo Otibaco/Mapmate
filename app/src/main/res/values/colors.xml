@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#1E88E5</color> <!-- Deep Blue -->
-    <color name="secondaryColor">#2E8B57</color> <!-- Sea Green -->
-    <color name="accentColor">#1E88E5</color> <!-- Light Coral -->
-    <color name="textColorBlack">#000000</color> <!-- Black Text -->
-    <color name="textColorWhite">#FFFFFF</color> <!-- White Text -->
-    <color name="lightBackground">#FFFFFF</color> <!-- White Background for Light Mode -->
-    <color name="gray">#4DFFFFFF</color> <!-- White Background for Light Mode -->
-    <color name="darkBackground">#141313</color> <!-- Black Background for Dark Mode -->
-    <color name="Deepblue">#00008B</color>
-    <color name="Lightgray">#7E7E90</color>
 
-<!--new colors-->
-    <color name="primary">#4CAF50</color>
-    <color name="primary_dark">#388E3C</color>
-    <color name="primary_light">#C8E6C9</color>
-    <color name="accent">#FF9800</color>
-    <color name="primary_text">#212121</color>
-    <color name="secondary_text">#757575</color>
-    <color name="icons">#FFFFFF</color>
-    <color name="divider">#BDBDBD</color>
-    <color name="white">#FFFFFF</color>
-    <color name="black">#000000</color>
-    <color name="red">#FF0000</color>
-    <color name="accent_dark">#FF4081</color> <!-- Pink Accent -->
+    <!-- 🟦 Primary Blue (Main App Color) -->
+    <color name="primaryColor">#1E88E5</color> <!-- Used for top bar, FAB, selected icons -->
+
+    <!-- 🟦 Darker Blue Variant -->
+    <color name="primaryDarkColor">#1565C0</color> <!-- Status bar, hover, ripple effects -->
+
+    <!-- ✅ Accent Blue (Buttons & Highlights) -->
+    <color name="accentColor">#2196F3</color> <!-- Button background, toggles -->
+
+    <!-- ✅ Backgrounds -->
+    <color name="lightBackground">#FFFFFF</color> <!-- App background (Light Mode) -->
+    <color name="darkBackground">#000000</color> <!-- App background (Dark Mode) -->
+
+    <!-- ✅ Text Colors -->
+    <color name="textColorBlack">#000000</color> <!-- Default text (light mode) -->
+    <color name="textColorWhite">#FFFFFF</color> <!-- Default text (dark mode) -->
+
+    <!-- ✅ Icon/Hint/Inactive Text -->
+    <color name="gray">#7E7E90</color> <!-- Hint text, inactive icons, dividers -->
+
+    <!-- 🔵 Deep Blue Alternative -->
+    <color name="Deepblue">#00008B</color> <!-- Optional deeper blue for special elements -->
+
+    <!-- ⚙️ Utility Color -->
+    <color name="Lightgray">#B0BEC5</color> <!-- Optional border or card background -->
+
+<!--    Color for Emergency and error-->
+    <color name="Red">#D32F2F</color>
 
 </resources>
+
 
 
 
