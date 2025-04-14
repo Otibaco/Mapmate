@@ -1,4 +1,4 @@
-package com.example.mapmate;
+package com.example.mapmate.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -9,9 +9,8 @@ import android.view.animation.Animation;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 
-import com.example.mapmate.auth.RegLogActivity;
+import com.example.mapmate.R;
 
 public class SplashActivity extends AppCompatActivity {
     private static final int SPLASH_TIME_OUT = 2000; // 2 seconds delay
@@ -45,7 +44,7 @@ public class SplashActivity extends AppCompatActivity {
             intent = new Intent(this, SlideActivity.class);
         } else {
             // Not first time: Go to MainActivity
-            intent = new Intent(this, RegLogActivity.class);
+            intent = new Intent(this, MainActivity.class);
         }
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);

@@ -1,4 +1,4 @@
-package com.example.mapmate;
+package com.example.mapmate.items;
 
 public class SlideItem {
     private final int imageUrl;

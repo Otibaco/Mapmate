@@ -1,17 +1,13 @@
-package com.example.mapmate.auth;
+package com.example.mapmate.activities;
 
 import android.os.Bundle;
 import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.mapmate.R;
-
+import com.example.mapmate.adapters.AuthPagerAdapter;
 public class RegLogActivity extends AppCompatActivity {
 
     private ViewPager2 viewPager;

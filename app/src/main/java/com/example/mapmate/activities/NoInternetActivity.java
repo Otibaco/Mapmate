@@ -1,4 +1,4 @@
-package com.example.mapmate.broadcastR;
+package com.example.mapmate.activities;
 
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mapmate.MainActivity;
 import com.example.mapmate.R;
 
 public class NoInternetActivity extends AppCompatActivity {

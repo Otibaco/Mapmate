@@ -1,11 +1,12 @@
-package com.example.mapmate;
+package com.example.mapmate.activities;
 
 import android.content.IntentFilter;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mapmate.broadcastR.NetworkReceiver;
+import com.example.mapmate.R;
+import com.example.mapmate.broadcast.NetworkReceiver;
 
 public class MainActivity extends AppCompatActivity {
     private NetworkReceiver networkReceiver;

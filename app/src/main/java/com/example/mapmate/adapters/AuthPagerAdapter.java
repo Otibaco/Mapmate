@@ -1,11 +1,14 @@
-package com.example.mapmate.auth;
+package com.example.mapmate.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-class AuthPagerAdapter extends FragmentStateAdapter {
+import com.example.mapmate.auth.LoginFragment;
+import com.example.mapmate.auth.RegisterFragment;
+
+public class AuthPagerAdapter extends FragmentStateAdapter {
     public AuthPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
     }
@@ -20,4 +23,5 @@ class AuthPagerAdapter extends FragmentStateAdapter {
     public int getItemCount() {
         return 2; // Login & Sign Up
     }
+
 }

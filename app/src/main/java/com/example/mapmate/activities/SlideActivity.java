@@ -1,4 +1,4 @@
-package com.example.mapmate;
+package com.example.mapmate.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -9,7 +9,9 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.mapmate.auth.RegLogActivity;
+import com.example.mapmate.R;
+import com.example.mapmate.adapters.SlideAdapter;
+import com.example.mapmate.items.SlideItem;
 
 import me.relex.circleindicator.CircleIndicator3;
 
