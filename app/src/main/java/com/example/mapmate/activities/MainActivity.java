@@ -18,6 +18,7 @@ import com.example.mapmate.fragments.MapFragment;
 import com.example.mapmate.fragments.RemindersFragment;
 import com.example.mapmate.fragments.SettingsFragment;
 import com.example.mapmate.services.LocationService;
+import com.example.mapmate.utils.PermissionUtils;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
@@ -56,24 +57,21 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         Fragment fragment = null;
+        int itemId = item.getItemId();
 
-        switch (item.getItemId()) {
-            case R.id.navigation_map:
-                fragment = new MapFragment();
-                break;
-            case R.id.navigation_reminders:
-                fragment = new RemindersFragment();
-                break;
-            case R.id.navigation_friends:
-                fragment = new FriendsFragment();
-                break;
-            case R.id.navigation_settings:
-                fragment = new SettingsFragment();
-                break;
+        if (itemId == R.id.navigation_map) {
+            fragment = new MapFragment();
+        } else if (itemId == R.id.navigation_reminders) {
+            fragment = new RemindersFragment();
+        } else if (itemId == R.id.navigation_friends) {
+            fragment = new FriendsFragment();
+        } else if (itemId == R.id.navigation_settings) {
+            fragment = new SettingsFragment();
         }
 
         return loadFragment(fragment);
     }
+
 
     private void checkAndRequestPermissions() {
         String[] permissions = {

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<!--    <color name="primaryColor">#1E88E5</color> &lt;!&ndash; Deep Blue &ndash;&gt;-->
-<!--    <color name="secondaryColor">#2E8B57</color> &lt;!&ndash; Sea Green &ndash;&gt;-->
-<!--    <color name="accentColor">#1E88E5</color> &lt;!&ndash; Light Coral &ndash;&gt;-->
-<!--    <color name="textColorBlack">#000000</color> &lt;!&ndash; Black Text &ndash;&gt;-->
-<!--    <color name="textColorWhite">#FFFFFF</color> &lt;!&ndash; White Text &ndash;&gt;-->
-<!--    <color name="lightBackground">#FFFFFF</color> &lt;!&ndash; White Background for Light Mode &ndash;&gt;-->
-<!--    <color name="gray">#4DFFFFFF</color> &lt;!&ndash; White Background for Light Mode &ndash;&gt;-->
-<!--    <color name="darkBackground">#141313</color> &lt;!&ndash; Black Background for Dark Mode &ndash;&gt;-->
-<!--    <color name="Deepblue">#00008B</color>-->
-<!--    <color name="Lightgray">#7E7E90</color>-->
+    <color name="primaryColor">#1E88E5</color> <!-- Deep Blue -->
+    <color name="secondaryColor">#2E8B57</color> <!-- Sea Green -->
+    <color name="accentColor">#1E88E5</color> <!-- Light Coral -->
+    <color name="textColorBlack">#000000</color> <!-- Black Text -->
+    <color name="textColorWhite">#FFFFFF</color> <!-- White Text -->
+    <color name="lightBackground">#FFFFFF</color> <!-- White Background for Light Mode -->
+    <color name="gray">#4DFFFFFF</color> <!-- White Background for Light Mode -->
+    <color name="darkBackground">#141313</color> <!-- Black Background for Dark Mode -->
+    <color name="Deepblue">#00008B</color>
+    <color name="Lightgray">#7E7E90</color>
 
 <!--new colors-->
     <color name="primary">#4CAF50</color>
