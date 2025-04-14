@@ -1,15 +1,28 @@
-<resources>
-    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Customize your theme here -->
-        <item name="colorPrimary">@color/primaryColor</item>
-        <item name="colorSecondary">@color/secondaryColor</item>
-        <item name="colorAccent">@color/accentColor</item>
-        <item name="android:windowBackground">@color/lightBackground</item>
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="colorOnBackground">@color/textColorBlack</item>
-        <item name="android:textColorPrimary">?attr/colorOnBackground</item>
-<!--        <item name="android:windowFullscreen">true</item>-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+<style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorPrimaryVariant">@color/primary_dark</item>
+    <item name="colorOnPrimary">@color/white</item>
 
-    </style>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/accent</item>
+    <item name="colorSecondaryVariant">@color/accent</item>
+    <item name="colorOnSecondary">@color/black</item>
+
+    <!-- Status bar color. -->
+    <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+    <!-- Customize your theme here -->
+    <!--        <item name="colorPrimary">@color/primaryColor</item>-->
+    <!--        <item name="colorSecondary">@color/secondaryColor</item>-->
+    <!--        <item name="colorAccent">@color/accentColor</item>-->
+    <!--        <item name="android:windowBackground">@color/lightBackground</item>-->
+    <!--        <item name="android:windowTranslucentStatus">true</item>-->
+    <!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+    <!--        <item name="colorOnBackground">@color/textColorBlack</item>-->
+    <!--        <item name="android:textColorPrimary">?attr/colorOnBackground</item>-->
+    <!--        <item name="android:windowFullscreen">true</item>-->
+</style>
 </resources>
+
