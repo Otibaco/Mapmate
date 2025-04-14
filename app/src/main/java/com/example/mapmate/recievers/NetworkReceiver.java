@@ -1,4 +1,4 @@
-package com.example.mapmate.broadcast;
+package com.example.mapmate.recievers;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
