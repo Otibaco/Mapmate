@@ -1,10 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#121212"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".auth.SignupActivity">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Progress Indicator -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#27AE60"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:background="#2D2D2D"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:background="#2D2D2D"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:background="#2D2D2D"/>
+        </LinearLayout>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's create your account"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your email"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your password"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:inputType="textPassword"/>
+
+            <ImageView
+                android:id="@+id/togglePassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_visibility_off" />
+        </RelativeLayout>
+
+        <!-- Password Requirements -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Minimum of 8 characters"
+                android:textColor="#FFFFFF"
+                android:padding="4dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Upper case character"
+                android:textColor="#FFFFFF"
+                android:padding="4dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Lower case character"
+                android:textColor="#FFFFFF"
+                android:padding="4dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Special character"
+                android:textColor="#FFFFFF"
+                android:padding="4dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• At least one number"
+                android:textColor="#FFFFFF"
+                android:padding="4dp"/>
+        </GridLayout>
+
+        <!-- Dropdown -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What will you primarily use Quidax for?"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+        <Spinner
+            android:id="@+id/useCaseSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:theme="@style/SpinnerStyle"/>
+
+        <!-- Referral Code -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your referral code (optional)"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/referralCodeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"/>
+
+        <!-- Continue Button -->
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Continue"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#5D2DFD"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Terms & Privacy -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By signing up, you agree to our Terms of Use and our Privacy Policy"
+            android:textColor="#B0B0B0"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Login Link -->
+        <TextView
+            android:id="@+id/loginLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Log in"
+            android:textColor="#B084F7"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

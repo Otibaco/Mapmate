@@ -1,10 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#121212"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".auth.LoginActivity">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Welcome text -->
+        <TextView
+            android:text="Welcome back!"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Log in to your account to continue trading"
+            android:textColor="#B0B0B0"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Email input -->
+        <TextView
+            android:text="Enter your email"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password input -->
+        <TextView
+            android:text="Enter your password"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:layout_alignParentStart="true"
+                android:textColor="#FFFFFF"
+                android:inputType="textPassword"/>
+
+            <ImageView
+                android:id="@+id/togglePassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_visibility_off" />
+        </RelativeLayout>
+
+        <!-- Forgot password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password? Reset it"
+            android:textColor="#B084F7"
+            android:textSize="13sp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/forgotPassword"/>
+
+        <!-- Support Box -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginTop="90dp"
+            android:background="#1E1E1E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_chat"/>
+
+            <TextView
+                android:text="Need help?"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text=" Chat with support"
+                android:textColor="#B084F7"
+                android:textSize="14sp"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <!-- Login button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:text="Log in"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#5D2DFD"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <!-- Sign Up link -->
+        <TextView
+            android:id="@+id/signupText"
+            android:text="Don’t have an account yet? Sign up"
+            android:textColor="#B084F7"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_margin="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+</ScrollView>
